@@ -7,6 +7,7 @@ import { usePlayers } from "../hooks/usePlayers";
 import { useRouter } from "next/navigation";
 import { PanelPlayers } from "../components/panel-players";
 import { Player } from "../types/player";
+import { Title } from "../components/title";
 
 export default function Game () {
   const {players} = usePlayers();
@@ -26,6 +27,7 @@ export default function Game () {
 
   return(
     <main className="flex min-h-screen flex-col items-center justify-center pt-4">
+      <Title/>
       <div className="my-2">
         { players.length > 0 && players.map((player: Player, index: number) => <PanelPlayers player={player} index={index+1} key={player.id}/>)}
       </div>
