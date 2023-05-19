@@ -1,10 +1,10 @@
 "use client"
 
-import { PlayersForm } from "./container/players-form";
-import { usePlayers } from "./hooks/usePlayers";
-import { Player } from "./types/player";
-import { PanelPlayers } from "./components/panel-players";
-import { Title } from "./components/title";
+import { PlayersForm } from "../container/players-form";
+import { usePlayers } from "../hooks/usePlayers";
+import { Player } from "../types/player";
+import { PanelPlayers } from "../components/panel-players";
+import { Title } from "../components/title";
 
 export default function Home() {
   const {players} = usePlayers();

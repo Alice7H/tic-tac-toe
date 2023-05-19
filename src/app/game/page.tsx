@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react";
-import { Board } from "../container/board";
-import { Button } from "../components/button";
-import { usePlayers } from "../hooks/usePlayers";
+import { Board } from "../../container/board";
+import { Button } from "../../components/button";
+import { usePlayers } from "../../hooks/usePlayers";
 import { useRouter } from "next/navigation";
-import { PanelPlayers } from "../components/panel-players";
-import { Player } from "../types/player";
-import { Title } from "../components/title";
+import { PanelPlayers } from "../../components/panel-players";
+import { Player } from "../../types/player";
+import { Title } from "../../components/title";
 
 export default function Game () {
   const {players} = usePlayers();
